@@ -7,11 +7,12 @@
 
 $(document).on('pageinit', function() {
 	
+	//https://demos.jquerymobile.com/1.2.0/docs/forms/switch/
 	//set up listener for button click
 	  $('#btn').click(function(){
        $(this).toggleClass("btnClicked");
         });
-	  
+
 	 function toggleState(item){
            if(item.className == "on") {
               $(document).on('click',checklocation);
