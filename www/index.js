@@ -36,7 +36,7 @@ function successPosition(position) {
 	
 	//OK. Now we want to update the display with the correct values
 	$('#time').val("Recieved data at " + unixtime);
-	$('#lattext').val("I should contain the latitude data..." + latitude);
+	$('#lattext').val(latitude);
 	$('#date').val("date is..." + date);
 	
 }
