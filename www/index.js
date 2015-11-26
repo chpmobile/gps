@@ -1,8 +1,28 @@
 //when the jQuery Mobile page is initialised
+// $(document).ready(function(){
+//     $('#turnon').click(function(){
+//         $(this).toggleClass("btnClicked");
+//     });
+// });
+
 $(document).on('pageinit', function() {
 	
 	//set up listener for button click
-	$(document).on('click', checklocation);
+	  $('#btn').click(function(){
+       $(this).toggleClass("btnClicked");
+        });
+	  
+	 function toggleState(item){
+           if(item.className == "on") {
+              $(document).on('click',checklocation);
+              item.className="off";
+
+           } else {
+             $(document).on('click', clearlocation);
+             item.className="on";
+           }
+        }
+	// $(document).on('click', checklocation);
 	// $(document).getElementById("turnon").on('click', checklocation);
 	// $(document).getElementById("turnof").on('click', clearlocation);
 	
@@ -51,7 +71,7 @@ function success(position) {
 function locationOptions(position) {
 
 var locationOptions = { maximumAge: 3000, timeout: 4000, enableHighAccuracy: true };
-		$('#loc').val(locationOptions);
+		// $('#loc').val(locationOptions);
 
 }
 
