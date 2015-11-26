@@ -12,13 +12,12 @@
         A sample application that counts the occurances of lifecycle events.
     </description>
 
-<<<<<<< HEAD
+
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Chpmobile
     </author>
-=======
-  
->>>>>>> origin/master
+ 
+
 <gap:platform name="android" />
 <plugin name="org.apache.cordova.geolocation" spec="0.3.10" source="pgb" />
     <preference name="permissions"                value="none"/>   
